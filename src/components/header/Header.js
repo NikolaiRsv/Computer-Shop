@@ -2,61 +2,36 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
-
-const styles = {
-  navItem: {
-    color: "orange",
-    fontSize: "20px",
-  },
- 
-};
+import "./HeaderStyles.css";
 
 export const Header = () => {
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" className="nav-bar">
         <Container>
-          <Navbar.Brand
-            style={{ color: "orange", marginRight: "70%", fontSize: "25px" }}
-            
-          >
-             <Link
-                to="/"
-                style={{ textDecoration: "none", ...styles.navItem }}
-              >
-                Computer Store
-              </Link>
+          <Navbar.Brand>
+            <Link to="/" className="nav-name">
+              Computer Store
+            </Link>
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link className="navItem" style={styles.navItem} >
-            <Link
-                to="/"
-                style={{ textDecoration: "none", ...styles.navItem }}
-              >
+            <Nav.Link className="navItem">
+              <Link to="/" className="link-item">
                 Home
               </Link>
             </Nav.Link>
-            <Nav.Link className="navItem" style={styles.navItem}>
-              <Link
-                to="/catalog"
-                style={{ textDecoration: "none", ...styles.navItem }}
-              >
+            <Nav.Link className="navItem">
+              <Link to="/catalog" className="link-item">
                 Catalog
               </Link>
             </Nav.Link>
-            <Nav.Link className="navItem" style={styles.navItem}>
-              <Link
-                to="/login"
-                style={{ textDecoration: "none", ...styles.navItem }}
-              >
+            <Nav.Link className="navItem">
+              <Link to="/login" className="link-item">
                 Login
               </Link>
             </Nav.Link>
-            <Nav.Link className="navItem" style={styles.navItem}>
-              <Link
-                to="/register"
-                style={{ textDecoration: "none", ...styles.navItem }}
-              >
+            <Nav.Link className="navItem">
+              <Link to="/register" className="link-item">
                 Register
               </Link>
             </Nav.Link>

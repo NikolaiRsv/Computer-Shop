@@ -1,0 +1,37 @@
+.container-ad {
+  margin-top: 80px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  max-width: 800px;
+  opacity: 0.95;
+}
+
+.background-ad {
+  background-image: url("https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/streams/2012/December/121208/1C5111051-original.jpeg");
+  background-color: transparent;
+  overflow: hidden;
+  height: 100vh;
+  width: auto;
+  background-size: cover;
+  padding-right: 28px;
+}
+.form-ad {
+  margin-top: 20px;
+}
+
+.button-ad {
+  margin-top: 20px;
+  border-width: 2px;
+
+  background-color: lightcoral;
+  border-color: lightblue;
+}
+
+.button-ad:hover {
+  background-color: lightblue;
+  border-color: lightcoral;
+  border-style: dashed;
+  border-width: 2px;
+}

@@ -5,7 +5,9 @@ import { Header } from "./components/header/Header.js";
 import Home from "./components/home/Home.js";
 import Login from "./components/login/Login.js";
 import Register from "./components/register/Register.js";
-import { CatalogItem } from "./components/catalog/CatalogItem.js";
+
+import { Catalog } from "./components/catalog/Catalog.js";
+import CreatePost from "./components/CreateAd/CreateAd.js";
 
 function App() {
   return (
@@ -16,8 +18,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/catalog" element={<CatalogItem />} />
-        
+        <Route path="/catalog" element={<Catalog />} />
+        <Route path="/create" element={<CreatePost />} />
       </Routes>
     </>
   );

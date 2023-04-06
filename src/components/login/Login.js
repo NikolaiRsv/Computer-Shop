@@ -4,7 +4,6 @@ import "./LoginStyles.css";
 const Login = () => {
   return (
     <div className="login-container">
-      <div className="login-bg"></div>
       <div className="login-box">
         <h2>Login</h2>
         <form>
@@ -14,9 +13,9 @@ const Login = () => {
         </form>
         <h6>Not registerd yet ?</h6>
 
-
-        <Link className="registerLink" to="/register">Register Here!</Link>
-       
+        <Link className="registerLink" to="/register">
+          Register Here!
+        </Link>
       </div>
     </div>
   );
