@@ -8,6 +8,7 @@ const styles = {
     color: "orange",
     fontSize: "20px",
   },
+ 
 };
 
 export const Header = () => {

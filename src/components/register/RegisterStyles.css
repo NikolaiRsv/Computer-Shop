@@ -1,0 +1,82 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 93.4vh;
+  position: relative;
+}
+
+.register-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+
+  background: 
+    url(https://i0.wp.com/www.kaldata.com/wp-content/uploads/2021/03/Apple-M1X-32-core-CHIP-scaled.jpg?fit=2048%2C1152&ssl=1);
+    background-size: cover ;
+    filter: blur(2px);
+}
+
+.register-box {
+  position: absolute;
+  width: 35%;
+  padding: 3rem;
+  padding-bottom: 70px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 3px;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: lightcoral;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: lightblue;
+}
+.loginLink {
+  position: absolute;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  left: 80%;
+  top: 85%;
+}
+
+.loginLink:hover {
+  color: lightcoral;
+}
+
+p {
+  position: absolute;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  left: 34;
+  top: 85%;
+}
