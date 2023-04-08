@@ -1,66 +1,23 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
 import "./CatalogItemStyles.css";
+import { Link } from "react-router-dom";
 
-export const CatalogItem = ({ title, image, description, onClick }) => {
+export const CatalogItem = ({ model, img, description, _id }) => {
   return (
     <>
       <Container className="item-container">
         <div className="item-content">
-          <img
-            src={
-              "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509650cv12d.jpg;maxHeight=120;maxWidth=120"
-            }
-            alt={title}
-            className="box-image"
-          />
-          <div className="box-text">
-            <div className="box-title">{"Hello"}</div>
-            <div className="box-description">{"someDesc"}</div>
+          <img src={img} className="item-image" />
+          <div className="item-text">
+            <div className="item-title">Model: {model}</div>
+            <div className="item-description">Description: {description}</div>
           </div>
-          <Button className="box-button" onClick={onClick}>
+          <Link to={`/catalog/${_id}`} className="details-button">
             Details
-          </Button>
+          </Link>
         </div>
       </Container>
-      <Container className="item-container">
-        <div className="item-content">
-          <img
-            src={
-              "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6450/6450866_sd.jpg;maxHeight=140;maxWidth=140"
-            }
-            alt={title}
-            className="box-image"
-          />
-          <div className="box-text">
-            <div className="box-title">Model: {"Macbook Air"}</div>
-            <div className="box-description">Description: {"someDesc"}</div>
-          </div>
-          <Button className="box-button" onClick={onClick}>
-            Details
-          </Button>
-        </div>
-      </Container>
-      <Container className="item-container">
-        <div className="item-content">
-          <img
-            src={
-              "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6450/6450866_sd.jpg;maxHeight=140;maxWidth=140"
-            }
-            alt={title}
-            className="box-image"
-          />
-          <div className="box-text">
-            <div className="box-title">Model: {"Macbook Air"}</div>
-            <div className="box-description">Description: {"someDesc"}</div>
-          </div>
-          <Button className="box-button" onClick={onClick}>
-            Details
-          </Button>
-        </div>
-      </Container>
-     
     </>
   );
 };

@@ -3,13 +3,13 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 5px;
+  padding: 10px;
 }
 
 .link-item {
   text-decoration: none;
   font-size: 20px;
-  margin-right: 20px;
+  margin-right: 30px;
   color: orange;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .nav-name {
-  margin-right: 1000px;
+  margin-right: 900px;
   font-size: 25px;
   text-decoration: none;
   color: orange;

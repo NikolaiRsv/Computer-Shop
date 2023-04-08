@@ -23,36 +23,37 @@
   transform: translateY(-2px);
 }
 
-.box-image {
-  width: 140px;
-  height: 140px;
+.item-image {
   object-fit: cover;
-  border-radius: 20%;
+  border-radius: 10%;
   margin-right: 20px;
 }
 
-.box-title {
+.item-title {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.box-description {
+.item-description {
   font-size: 16px;
   line-height: 1.5;
 }
 
-.box-button {
+.details-button {
   background-color: lightcoral;
   border-color: #eea236;
   margin-left: auto;
-  font-size: 16px;
-  padding: 6px 12px;
-  border-radius: 3px;
-  transition: all 0.2s ease;
+  font-size: 18px;
+  padding: 8px 20px;
+  border-radius: 13px;
+  text-decoration: none;
+  color: white;
+  
 }
 
-.box-button:hover {
+.details-button:hover {
   background-color: lightblue;
   border-color: #eea236;
+  color: lightcoral;
 }

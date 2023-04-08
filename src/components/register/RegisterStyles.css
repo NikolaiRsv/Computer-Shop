@@ -5,7 +5,7 @@
   height: 100vh;
   background: linear-gradient(
       to bottom,
-      rgba(0, 5, 10, 0.2)20%,
+      rgba(0, 5, 10, 0.2) 20%,
       rgba(120, 122, 123, 0.5)
     ),
     url(https://i0.wp.com/www.kaldata.com/wp-content/uploads/2021/03/Apple-M1X-32-core-CHIP-scaled.jpg?fit=2048%2C1152&ssl=1);
@@ -57,7 +57,7 @@ button:hover {
   font-size: 16px;
   font-weight: bold;
   left: 80%;
-  top: 85%;
+  top: 88%;
 }
 
 .loginLink:hover {
@@ -70,5 +70,9 @@ p {
   font-size: 16px;
   font-weight: bold;
   left: 34;
-  top: 85%;
+  top: 88%;
+}
+
+label {
+  font-weight: bold;
 }
