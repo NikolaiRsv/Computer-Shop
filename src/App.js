@@ -8,8 +8,10 @@ import Register from "./components/register/Register.js";
 
 import { Catalog } from "./components/catalog/Catalog.js";
 import CreatePost from "./components/CreateAd/CreateAd.js";
-import { Logout } from "./components/logout/logout.js";
 import { ComputerProvider } from "./contexts/ComputerContext.js";
+import { Details } from "./components/details/Details.js";
+import { Logout } from "./components/logout/logout.js";
+import EditAd from "./components/catalog/edit/EditAd.js";
 
 function App() {
   return (
@@ -25,7 +27,11 @@ function App() {
               <Route path="/register" element={<Register />} />
               <Route path="/catalog" element={<Catalog />} />
               <Route path="/create" element={<CreatePost />} />
+              <Route path="/catalog/:computerId" element={<Details />} />
+              <Route path="/catalog/:computerId/edit" element={<EditAd />} />
               <Route path="/logout" element={<Logout />} />
+
+
             </Routes>
           </main>
         </div>

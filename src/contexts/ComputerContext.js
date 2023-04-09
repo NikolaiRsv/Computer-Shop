@@ -16,10 +16,7 @@ export const ComputerProvider = ({ children }) => {
       .then((result) => {
         setComputers(result);
       })
-      .catch((error) => {
-        console.error("Error fetching computers:", error);
-      });
-  }, []);
+    }, []);
 
   const onCreateComputerSubmit = async (data) => {
     try {

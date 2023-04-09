@@ -12,7 +12,7 @@ export const Catalog = () => {
             <CatalogItem key={x._id} {...x} />
           ))}
 
-          {computers.length === 0 && <p>No ads yet</p>}
+          {computers.length === 0 && <p className="no-ads">No ads yet!</p>}
         </section>
       </div>
     </>
