@@ -1,111 +1,115 @@
+.div-details {
+  background-size: cover;
+  
+  background-image: url("https://assetsio.reedpopcdn.com/digitalfoundry-2022-fastest-laptop-cpu-intel-core-i9-12900hk-1643124377641.jpg?width=1920&height=1920&fit=bounds&quality=80&format=jpg&auto=webp");
+}
+
 .details-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    
-    
-  }
-  
-  .details-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
 
-    height: 350px;
-    
-    width: 80%;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-  }
-  
-  .details-row {
-    height: 100%;
-  }
-  
-  .details-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  }
-  
-  .details-image {
-    width: 100%;
-    height: 100%;
-    max-width: 450px;
-    object-fit: cover;
-  }
+.details-card {
+  height: 350px;
+  background-color: lightgray;
+  width: 80%;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  opacity: 0.9;
+}
 
-  .details-model{
-    color: lightcoral;
-    font-size: 30px;
-  }
-  
-  .details-storage {
-    position:absolute;
-    bottom:200px;
-    font-size: 20px;
-  }
+.details-row {
+  height: 100%;
+}
 
-  .details-cpu {
-    position:absolute;
-    bottom:150px;
-    font-size: 20px;
-  }
-  .details-gpu {
-    position:absolute;
-    bottom:100px;
-    font-size: 20px;
-  }
-  
-  .details-value {
-   margin-left: 10px;
-  }
-  
-  .details-description {
-    position: relative;
-    bottom: 50px;
-    
-    font-size: 20px;
-  }
-  
-  .details-buttons-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 100px;
-  }
-  
-  .details-edit-button {
-    margin-right: 10px;
-    padding: 10px 20px;
-    color: white;
-    background-color: lightcoral;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-  }
-  
-  .details-edit-button:hover {
-    background-color: lightblue;
-    color: lightcoral;
-    
-  }
-  
-  .details-delete-button {
-    padding: 10px 20px;
-    color: white;
-    background-color: lightcoral;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;}
+.details-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
 
-    .details-delete-button:hover{
-        background-color: lightblue;
-        color: lightcoral;
-    }
+.details-image {
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  object-fit: cover;
+}
+
+.details-model {
+  color: lightcoral;
+  font-size: 30px;
+}
+
+.details-storage {
+  position: absolute;
+  bottom: 200px;
+  font-size: 20px;
+}
+
+.details-cpu {
+  position: absolute;
+  bottom: 150px;
+  font-size: 20px;
+}
+.details-gpu {
+  position: absolute;
+  bottom: 100px;
+  font-size: 20px;
+}
+
+.details-value {
+  margin-left: 10px;
+}
+
+.details-description {
+  position: relative;
+  bottom: 50px;
+
+  font-size: 20px;
+}
+
+.details-buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.details-edit-button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  color: white;
+  background-color: lightcoral;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.details-edit-button:hover {
+  background-color: lightblue;
+  color: lightcoral;
+}
+
+.details-delete-button {
+  padding: 10px 20px;
+  color: white;
+  background-color: lightcoral;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.details-delete-button:hover {
+  background-color: lightblue;
+  color: lightcoral;
+}

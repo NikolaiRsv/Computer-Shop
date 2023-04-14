@@ -23,55 +23,57 @@ export const Details = () => {
   const isOwner = computer._ownerId === userId;
 
   return (
-    <Container className="details-container">
-      <Card className="details-card">
-        <Row className="details-row">
-          <Col md={5} className="details-image-container">
-            <Image src={computer.img} className="details-image" />
-          </Col>
-          <Col md={7}>
-            <Card.Body>
-              <Card.Title className="details-model">
-                {computer.model}
-              </Card.Title>
-              <Card.Text>
-                <span className="details-storage">
-                  Storage:
-                  <span className="details-value">{computer.storage}</span>
-                </span>
-                <span className="details-cpu">
-                  CPU:
-                  <span className="details-value">{computer.cpu}</span>
-                </span>
-                <span className="details-gpu">
-                  GPU:
-                  <span className="details-value">{computer.gpu}</span>
-                </span>
-                <span className="details-description">
-                  Description: {computer.description}
-                </span>
-              </Card.Text>
+    <div className="div-details">
+      <Container className="details-container">
+        <Card className="details-card">
+          <Row className="details-row">
+            <Col md={5} className="details-image-container">
+              <Image src={computer.img} className="details-image" />
+            </Col>
+            <Col md={7}>
+              <Card.Body>
+                <Card.Title className="details-model">
+                  {computer.model}
+                </Card.Title>
+                <Card.Text>
+                  <span className="details-storage">
+                    Storage:
+                    <span className="details-value">{computer.storage}</span>
+                  </span>
+                  <span className="details-cpu">
+                    CPU:
+                    <span className="details-value">{computer.cpu}</span>
+                  </span>
+                  <span className="details-gpu">
+                    GPU:
+                    <span className="details-value">{computer.gpu}</span>
+                  </span>
+                  <span className="details-description">
+                    Description: {computer.description}
+                  </span>
+                </Card.Text>
 
-              {isOwner && (
-                <div className="details-buttons-container">
-                  <Link
-                    to={`/catalog/${computer._id}/edit`}
-                    className="details-edit-button"
-                  >
-                    Edit
-                  </Link>
-                  <Button
-                    className="details-delete-button"
-                    onClick={handleDelete}
-                  >
-                    Delete
-                  </Button>
-                </div>
-              )}
-            </Card.Body>
-          </Col>
-        </Row>
-      </Card>
-    </Container>
+                {isOwner && (
+                  <div className="details-buttons-container">
+                    <Link
+                      to={`/catalog/${computer._id}/edit`}
+                      className="details-edit-button"
+                    >
+                      Edit
+                    </Link>
+                    <Button
+                      className="details-delete-button"
+                      onClick={handleDelete}
+                    >
+                      Delete
+                    </Button>
+                  </div>
+                )}
+              </Card.Body>
+            </Col>
+          </Row>
+        </Card>
+      </Container>
+    </div>
   );
 };
