@@ -11,12 +11,11 @@ export const ComputerProvider = ({ children }) => {
   const computerService = computerServiceFactory();
 
   useEffect(() => {
-    computerService
-      .getAll()
-      .then((result) => {
-        setComputers(result);
-      })
-    }, []);
+    computerService.getAll().then((result) => {
+      setComputers(result);
+    });
+  }, []);
+
 
   const onCreateComputerSubmit = async (data) => {
     try {

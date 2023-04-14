@@ -8,11 +8,11 @@ export const Catalog = () => {
     <>
       <div className="background-image">
         <section className="catalog-page">
-          {computers.map((x) => (
+          {computers?.map((x) => (
             <CatalogItem key={x._id} {...x} />
           ))}
 
-          {computers.length === 0 && <p className="no-ads">No ads yet!</p>}
+          {computers?.length === 0 && <p className="no-ads">No ads yet!</p>}
         </section>
       </div>
     </>
